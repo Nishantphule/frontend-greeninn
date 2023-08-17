@@ -6,13 +6,13 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
 
-export default function Chat() {
+export default function Chaat() {
 
-    const [menu, setMenu] = useState({ chat: [] });
+    const [menu, setMenu] = useState({ chaat: [] });
 
     const fetchData = () => {
-        axios.get(`${API}/chat`)
-            .then((res) => setMenu({ chat: res.data.chat }))
+        axios.get(`${API}/chaat`)
+            .then((res) => setMenu({ chaat: res.data.chaat }))
 
     }
 
@@ -22,7 +22,7 @@ export default function Chat() {
         <div className="menuContainer">
             <h2>Chat</h2>
             <List sx={{ width: '100%' }}>
-                {menu.chat.map(({ name, price }, i) => (
+                {menu.chaat.map(({ name, price }, i) => (
                     <ListItem
                         key={i}
                         disableGutters

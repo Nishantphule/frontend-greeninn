@@ -13,7 +13,7 @@ import BreakfastMisal from './menuComponents/BreakfastMisal'
 import SouthIndian from './menuComponents/SouthIndian'
 import SnacksPapad from './menuComponents/SnacksPapad'
 import Upawas from './menuComponents/Upawas'
-import Chat from './menuComponents/Chat'
+import Chaat from './menuComponents/Chaat'
 import PizzaPastaSandwiches from './menuComponents/PizzaPastaSandwiches'
 import Chinese from './menuComponents/Chinese'
 import ContinentalTandoor from './menuComponents/ContinentalTandoor'
@@ -44,7 +44,7 @@ function App() {
     { name: 'Pav Bhaji,Chole & Pulao', link: "pavBhaji&chole&pulao" },
     { name: 'Snacks & Papad', link: "snacks&papad" },
     { name: 'Upawas', link: "upawas" },
-    { name: 'Chat', link: "chat" },
+    { name: 'Chaat', link: "chaat" },
     { name: 'Pizza,Pasta & Sandwiches', link: "pizzaPasta&sandwiches" },
     { name: "Chinese", link: "chinese" },
     { name: 'Continental & tandoor', link: "continental&tandoor" },
@@ -102,7 +102,7 @@ function App() {
             <Route path='/pavBhaji&chole&pulao' element={<PavBhajiCholePulao />} />
             <Route path="/snacks&papad" element={<SnacksPapad />} />
             <Route path="/upawas" element={<Upawas />} />
-            <Route path="/chat" element={<Chat />} />
+            <Route path="/chaat" element={<Chaat />} />
             <Route path="/pizzaPasta&sandwiches" element={<PizzaPastaSandwiches />} />
             <Route path="/chinese" element={<Chinese />} />
             <Route path="/continental&tandoor" element={<ContinentalTandoor />} />
