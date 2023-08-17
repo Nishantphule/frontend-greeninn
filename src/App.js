@@ -6,7 +6,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
-import { NotFound } from './components/NotFound';
+import NotFound from './components/NotFound';
 import { useNavigate } from 'react-router-dom';
 import Liquids from './menuComponents/Liquids';
 import BreakfastMisal from './menuComponents/BreakfastMisal'
@@ -22,6 +22,7 @@ import Biryani from './menuComponents/Biryani'
 import Breads from './menuComponents/Breads'
 import RiceDal from './menuComponents/RicaDal'
 import Deserts from './menuComponents/Deserts'
+import PavBhajiCholePulao from './menuComponents/PavBhajiCholePulao';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
     { name: "Beverages & Drinks", link: "liquids" },
     { name: "Breakfast & Misal", link: "breakfast&misal" },
     { name: 'South Indian', link: "southIndian" },
+    { name: 'Pav Bhaji,Chole & Pulao', link: "pavBhaji&chole&pulao" },
     { name: 'Snacks & Papad', link: "snacks&papad" },
     { name: 'Upawas', link: "upawas" },
     { name: 'Chat', link: "chat" },
@@ -97,6 +99,7 @@ function App() {
             <Route path="/liquids" element={<Liquids />} />
             <Route path="/breakfast&misal" element={<BreakfastMisal />} />
             <Route path="/southIndian" element={<SouthIndian />} />
+            <Route path='/pavBhaji&chole&pulao' element={<PavBhajiCholePulao />} />
             <Route path="/snacks&papad" element={<SnacksPapad />} />
             <Route path="/upawas" element={<Upawas />} />
             <Route path="/chat" element={<Chat />} />

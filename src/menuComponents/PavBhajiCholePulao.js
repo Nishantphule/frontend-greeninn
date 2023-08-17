@@ -6,21 +6,23 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
 
-export default function Liquids() {
-    const [liquids, setLiquids] = useState({ beverages: [], juices: [], milkShakes: [], lassi: [] });
+export default function PavBhajiCholePulao() {
+
+    const [menu, setMenu] = useState({ pavBhaji: [], pulao: [], chole: [] });
+
     const fetchData = () => {
-        axios.get(`${API}/liquids`)
-            .then((res) => setLiquids({ beverages: res.data.beverages, juices: res.data.juices, milkShakes: res.data.milkShakes, lassi: res.data.lassi }))
+        axios.get(`${API}/pavBhaji&chole&pulao`)
+            .then((res) => setMenu({ pavBhaji: res.data.pavBhaji, pulao: res.data.pulao, chole: res.data.chole }))
 
     }
 
     useEffect(() => fetchData(), []);
 
     return (
-        <div className='menuContainer'>
-            <h2>Beverages</h2>
+        <div className="menuContainer">
+            <h2>Pav Bhaji</h2>
             <List sx={{ width: '100%' }}>
-                {liquids.beverages.map(({ name, price }, i) => (
+                {menu.pavBhaji.map(({ name, price }, i) => (
                     <ListItem
                         key={i}
                         disableGutters
@@ -34,25 +36,10 @@ export default function Liquids() {
                     </ListItem>
                 ))}
             </List>
-            <h2>Juices</h2>
+
+            <h2>Pulao</h2>
             <List sx={{ width: '100%' }}>
-                {liquids.juices.map(({ name, price, options }, i) => (
-                    <ListItem
-                        key={i}
-                        disableGutters
-                        secondaryAction={
-                            <IconButton aria-label="comment">
-                                {price}
-                            </IconButton>
-                        }
-                    >
-                        <ListItemText primary={name} secondary={options ? `(${options[0]} /${options[1]} /${options[2]})` : ""} />
-                    </ListItem>
-                ))}
-            </List>
-            <h2>Milk Shakes</h2>
-            <List sx={{ width: '100%' }}>
-                {liquids.milkShakes.map(({ name, price }, i) => (
+                {menu.pulao.map(({ name, price }, i) => (
                     <ListItem
                         key={i}
                         disableGutters
@@ -66,9 +53,10 @@ export default function Liquids() {
                     </ListItem>
                 ))}
             </List>
-            <h2>Lassi</h2>
+
+            <h2>Chole</h2>
             <List sx={{ width: '100%' }}>
-                {liquids.lassi.map(({ name, price }, i) => (
+                {menu.chole.map(({ name, price }, i) => (
                     <ListItem
                         key={i}
                         disableGutters
@@ -83,8 +71,5 @@ export default function Liquids() {
                 ))}
             </List>
         </div>
-
-
-
     )
 }
