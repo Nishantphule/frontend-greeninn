@@ -1,0 +1,1 @@
+export const API = 'https://backend-greeninn.onrender.com/menu'
