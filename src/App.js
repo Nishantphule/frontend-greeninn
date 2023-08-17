@@ -26,7 +26,7 @@ import Deserts from './menuComponents/Deserts'
 
 function App() {
 
-  const [mode, setMode] = useState("dark")
+  const [mode, setMode] = useState("light")
 
   const Theme = createTheme({
     palette: {
