@@ -20,7 +20,7 @@ export default function Chaat() {
 
     return (
         <div className="menuContainer">
-            <h2>Chat</h2>
+            <h2>Chaat</h2>
             <List sx={{ width: '100%' }}>
                 {menu.chaat.map(({ name, price }, i) => (
                     <ListItem
