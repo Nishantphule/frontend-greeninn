@@ -1,1 +1,1 @@
-export const API = 'http://localhost:9000/menu' 
+export const API = 'https://iurr9y4cu1.execute-api.ap-south-1.amazonaws.com/app/menu' 
