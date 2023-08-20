@@ -64,6 +64,7 @@ function App() {
         <Paper elevation={4} style={{ minHeight: "100vh", borderRadius: "0px" }}>
 
           <AppBar position="static" color='success'>
+
             <Toolbar >
               <LocalDiningIcon sx={{ mr: 1 }} />
               <Typography
@@ -86,6 +87,14 @@ function App() {
                 {mode === "light" ? <Brightness4Icon /> : <Brightness7Icon />} {mode === "light" ? "dark" : "light"} MODE
               </Button>
             </Toolbar>
+
+            <div>
+              <h3>
+                <KeyboardDoubleArrowLeftIcon />
+                Swipe
+                <KeyboardDoubleArrowRightIcon /></h3>
+            </div>
+
             <Toolbar>
               <div className="overflow-auto">
                 <div id="filterSearch">
@@ -95,12 +104,7 @@ function App() {
                 </div>
               </div>
             </Toolbar>
-            <div>
-              <h3>
-                <KeyboardDoubleArrowLeftIcon />
-                Swipe
-                <KeyboardDoubleArrowRightIcon /></h3>
-            </div>
+
           </AppBar>
 
           <Routes>
