@@ -23,6 +23,8 @@ import Breads from './menuComponents/Breads'
 import RiceDal from './menuComponents/RicaDal'
 import Deserts from './menuComponents/Deserts'
 import PavBhajiCholePulao from './menuComponents/PavBhajiCholePulao';
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 
 function App() {
@@ -62,7 +64,7 @@ function App() {
         <Paper elevation={4} style={{ minHeight: "100vh", borderRadius: "0px" }}>
 
           <AppBar position="static" color='success'>
-            <Toolbar>
+            <Toolbar >
               <LocalDiningIcon sx={{ mr: 1 }} />
               <Typography
                 variant="h6"
@@ -93,6 +95,12 @@ function App() {
                 </div>
               </div>
             </Toolbar>
+            <div>
+              <h3>
+                <KeyboardDoubleArrowLeftIcon />
+                Swipe
+                <KeyboardDoubleArrowRightIcon /></h3>
+            </div>
           </AppBar>
 
           <Routes>
