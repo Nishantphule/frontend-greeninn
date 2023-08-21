@@ -87,9 +87,7 @@ function App() {
                 {mode === "light" ? <Brightness4Icon /> : <Brightness7Icon />} {mode === "light" ? "dark" : "light"} MODE
               </Button>
             </Toolbar>
-
             <hr />
-
             <div>
               <h5>
                 <KeyboardDoubleArrowLeftIcon />
