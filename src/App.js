@@ -88,6 +88,8 @@ function App() {
               </Button>
             </Toolbar>
 
+            <hr />
+
             <div>
               <h5>
                 <KeyboardDoubleArrowLeftIcon />
