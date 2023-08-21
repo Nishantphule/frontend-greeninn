@@ -89,10 +89,10 @@ function App() {
             </Toolbar>
 
             <div>
-              <h3>
+              <h5>
                 <KeyboardDoubleArrowLeftIcon />
                 Swipe
-                <KeyboardDoubleArrowRightIcon /></h3>
+                <KeyboardDoubleArrowRightIcon /></h5>
             </div>
 
             <Toolbar>

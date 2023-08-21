@@ -24,7 +24,7 @@ body {
 /* filter */
 .overflow-auto {
   overflow: auto;
-  margin: 20px 0px;
+  margin: 10px 0px 20px;
 }
 
 #filterSearch {
@@ -72,6 +72,6 @@ h2 {
   text-decoration: underline;
 }
 
-h3 {
+h5 {
   text-align: center;
 }
