@@ -73,12 +73,13 @@ function App() {
                 component="a"
                 href="/"
                 sx={{
-                  mr: 2,
+                  mr: 1,
                   fontFamily: 'monospace',
                   fontWeight: 700,
-                  letterSpacing: '.3rem',
+                  letterSpacing: '.2rem',
                   color: 'inherit',
                   textDecoration: 'none',
+                  fontSize: '18px'
                 }}
               >
                 GREEN INN
