@@ -13,7 +13,7 @@ import BreakfastMisal from './menuComponents/BreakfastMisal'
 import SouthIndian from './menuComponents/SouthIndian'
 import SnacksPapad from './menuComponents/SnacksPapad'
 import Upawas from './menuComponents/Upawas'
-import Chaat from './menuComponents/Chaat'
+import Thalis from './menuComponents/Thalis';
 import PizzaPastaSandwiches from './menuComponents/PizzaPastaSandwiches'
 import Chinese from './menuComponents/Chinese'
 import ContinentalTandoor from './menuComponents/ContinentalTandoor'
@@ -25,7 +25,7 @@ import Deserts from './menuComponents/Deserts'
 import PavBhajiCholePulao from './menuComponents/PavBhajiCholePulao';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import Thalis from './menuComponents/Thalis';
+
 
 
 function App() {
