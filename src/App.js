@@ -47,7 +47,7 @@ function App() {
     { name: 'Pav Bhaji,Chole & Pulao', link: "pavBhaji&chole&pulao" },
     { name: 'Snacks & Papad', link: "snacks&papad" },
     { name: 'Upawas', link: "upawas" },
-    { name: "Thali's", link: "thalis" },
+    { name: "Thalis", link: "thalis" },
     { name: 'Sandwiches', link: "pizzaPasta&sandwiches" },
     { name: "Chinese", link: "chinese" },
     { name: 'Continental & tandoor', link: "continental&tandoor" },
