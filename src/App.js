@@ -25,6 +25,7 @@ import Deserts from './menuComponents/Deserts'
 import PavBhajiCholePulao from './menuComponents/PavBhajiCholePulao';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import Thalis from './menuComponents/Thalis';
 
 
 function App() {
@@ -46,8 +47,8 @@ function App() {
     { name: 'Pav Bhaji,Chole & Pulao', link: "pavBhaji&chole&pulao" },
     { name: 'Snacks & Papad', link: "snacks&papad" },
     { name: 'Upawas', link: "upawas" },
-    { name: 'Chaat', link: "chaat" },
-    { name: 'Pizza,Pasta & Sandwiches', link: "pizzaPasta&sandwiches" },
+    { name: "Thali's", link: "thalis" },
+    { name: 'Sandwiches', link: "pizzaPasta&sandwiches" },
     { name: "Chinese", link: "chinese" },
     { name: 'Continental & tandoor', link: "continental&tandoor" },
     { name: "Main Course", link: "mainCourse" },
@@ -115,7 +116,7 @@ function App() {
             <Route path='/pavBhaji&chole&pulao' element={<PavBhajiCholePulao />} />
             <Route path="/snacks&papad" element={<SnacksPapad />} />
             <Route path="/upawas" element={<Upawas />} />
-            <Route path="/chaat" element={<Chaat />} />
+            <Route path="/thalis" element={<Thalis />} />
             <Route path="/pizzaPasta&sandwiches" element={<PizzaPastaSandwiches />} />
             <Route path="/chinese" element={<Chinese />} />
             <Route path="/continental&tandoor" element={<ContinentalTandoor />} />

@@ -6,12 +6,11 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
 
-export default function PizzaPastaSandwiches() {
-
-    const [menu, setMenu] = useState({ pizzaPasta: [], sandwiches: [] });
+export default function Thalis() {
+    const [menu, setMenu] = useState({ pizzaPasta: [] });
 
     const fetchData = () => {
-        axios.get(`${API}/pizza&pasta&sandwiches`)
+        axios.get(`${API}/chaat`)
             .then((res) => setMenu({ pizzaPasta: res.data.pizzaPasta, sandwiches: res.data.sandwiches }))
 
     }
@@ -20,9 +19,9 @@ export default function PizzaPastaSandwiches() {
 
     return (
         <div className="menuContainer">
-            <h2>Sandwiches</h2>
+            <h2>Thalis (11 am to 3pm)</h2>
             <List sx={{ width: '100%' }}>
-                {menu.sandwiches.map(({ name, price }, i) => (
+                {menu.sandwiches.map(({ name, price, extras }, i) => (
                     <ListItem
                         key={i}
                         disableGutters
@@ -32,7 +31,7 @@ export default function PizzaPastaSandwiches() {
                             </IconButton>
                         }
                     >
-                        <ListItemText primary={name} />
+                        <ListItemText primary={name} secondary={extras} />
                     </ListItem>
                 ))}
             </List>
